@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.customer-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.customer-header {
+    background-color: #f0f0f0;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.up {
+    transform: rotate(180deg);
+}
+
+.customer-info {
+    display: none;
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #ccc;
+}
+
+.customer-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.customer-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.customer-details li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
