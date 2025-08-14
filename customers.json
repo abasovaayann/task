@@ -1,0 +1,182 @@
+[
+  {
+    "cif": "83492071",
+    "firstName": "Alice",
+    "lastName": "Walker",
+    "accountNumber": "102938475612",
+    "address": "123 Elm St, Baku, Azerbaijan",
+    "birthDate": "1992-04-15",
+    "photo": "https://randomuser.me/api/portraits/women/1.jpg"
+  },
+  {
+    "cif": "57018436",
+    "firstName": "Benjamin",
+    "lastName": "Carter",
+    "accountNumber": "564738291045",
+    "address": "45 King Ave, London, United Kingdom",
+    "birthDate": "1988-11-02",
+    "photo": "https://randomuser.me/api/portraits/men/2.jpg"
+  },
+  {
+    "cif": "20957384",
+    "firstName": "Chloe",
+    "lastName": "Martin",
+    "accountNumber": "938475610293",
+    "address": "9 Maple Road, Paris, France",
+    "birthDate": "1995-06-27",
+    "photo": "https://randomuser.me/api/portraits/women/3.jpg"
+  },
+  {
+    "cif": "78134602",
+    "firstName": "Daniel",
+    "lastName": "Reed",
+    "accountNumber": "475610293847",
+    "address": "77 Oak Blvd, New York, USA",
+    "birthDate": "1991-01-19",
+    "photo": "https://randomuser.me/api/portraits/men/4.jpg"
+  },
+  {
+    "cif": "46029871",
+    "firstName": "Emily",
+    "lastName": "Hughes",
+    "accountNumber": "120394857661",
+    "address": "12 River St, Toronto, Canada",
+    "birthDate": "1993-09-08",
+    "photo": "https://randomuser.me/api/portraits/women/5.jpg"
+  },
+  {
+    "cif": "93571028",
+    "firstName": "Felix",
+    "lastName": "Bennett",
+    "accountNumber": "847561029334",
+    "address": "4 Harbor Way, Sydney, Australia",
+    "birthDate": "1986-12-30",
+    "photo": "https://randomuser.me/api/portraits/men/6.jpg"
+  },
+  {
+    "cif": "68025497",
+    "firstName": "Grace",
+    "lastName": "Thompson",
+    "accountNumber": "334920187456",
+    "address": "58 Pine St, Dublin, Ireland",
+    "birthDate": "1997-03-11",
+    "photo": "https://randomuser.me/api/portraits/women/7.jpg"
+  },
+  {
+    "cif": "15790234",
+    "firstName": "Henry",
+    "lastName": "Miller",
+    "accountNumber": "556789204381",
+    "address": "91 Cedar Ave, Berlin, Germany",
+    "birthDate": "1990-07-05",
+    "photo": "https://randomuser.me/api/portraits/men/8.jpg"
+  },
+  {
+    "cif": "72460981",
+    "firstName": "Isabella",
+    "lastName": "Lopez",
+    "accountNumber": "903845761022",
+    "address": "10 Lake View, Madrid, Spain",
+    "birthDate": "1994-02-21",
+    "photo": "https://randomuser.me/api/portraits/women/9.jpg"
+  },
+  {
+    "cif": "39682057",
+    "firstName": "Jack",
+    "lastName": "Foster",
+    "accountNumber": "748392015634",
+    "address": "2 Sunrise Ct, Auckland, New Zealand",
+    "birthDate": "1989-05-14",
+    "photo": "https://randomuser.me/api/portraits/men/10.jpg"
+  },
+  {
+    "cif": "84275196",
+    "firstName": "Katherine",
+    "lastName": "Price",
+    "accountNumber": "219384756403",
+    "address": "66 Garden Ln, Rome, Italy",
+    "birthDate": "1996-10-03",
+    "photo": "https://randomuser.me/api/portraits/women/11.jpg"
+  },
+  {
+    "cif": "50316782",
+    "firstName": "Liam",
+    "lastName": "Anderson",
+    "accountNumber": "675849302114",
+    "address": "8 Coral Dr, Miami, USA",
+    "birthDate": "1991-09-23",
+    "photo": "https://randomuser.me/api/portraits/men/12.jpg"
+  },
+  {
+    "cif": "21837940",
+    "firstName": "Mia",
+    "lastName": "Clark",
+    "accountNumber": "302914857663",
+    "address": "31 Willow St, Melbourne, Australia",
+    "birthDate": "1993-12-12",
+    "photo": "https://randomuser.me/api/portraits/women/13.jpg"
+  },
+  {
+    "cif": "96720453",
+    "firstName": "Noah",
+    "lastName": "Scott",
+    "accountNumber": "584739201568",
+    "address": "19 Crescent Rd, Edinburgh, UK",
+    "birthDate": "1987-06-09",
+    "photo": "https://randomuser.me/api/portraits/men/14.jpg"
+  },
+  {
+    "cif": "64093512",
+    "firstName": "Olivia",
+    "lastName": "Green",
+    "accountNumber": "940231857604",
+    "address": "5 Bay St, Lisbon, Portugal",
+    "birthDate": "1998-01-28",
+    "photo": "https://randomuser.me/api/portraits/women/15.jpg"
+  },
+  {
+    "cif": "37268019",
+    "firstName": "Peter",
+    "lastName": "King",
+    "accountNumber": "814756203991",
+    "address": "120 Bridge Rd, Stockholm, Sweden",
+    "birthDate": "1985-08-18",
+    "photo": "https://randomuser.me/api/portraits/men/16.jpg"
+  },
+  {
+    "cif": "45679023",
+    "firstName": "Quinn",
+    "lastName": "Young",
+    "accountNumber": "510293847562",
+    "address": "73 Meadow Ave, Vienna, Austria",
+    "birthDate": "1992-11-07",
+    "photo": "https://randomuser.me/api/portraits/women/17.jpg"
+  },
+  {
+    "cif": "70214598",
+    "firstName": "Robert",
+    "lastName": "Hill",
+    "accountNumber": "739120564883",
+    "address": "6 Forest Way, Budapest, Hungary",
+    "birthDate": "1990-03-02",
+    "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+  },
+  {
+    "cif": "98560341",
+    "firstName": "Sophia",
+    "lastName": "Baker",
+    "accountNumber": "284756019334",
+    "address": "27 Pearl St, Athens, Greece",
+    "birthDate": "1994-04-29",
+    "photo": "https://randomuser.me/api/portraits/women/19.jpg"
+  },
+  {
+    "cif": "61428950",
+    "firstName": "Thomas",
+    "lastName": "Ward",
+    "accountNumber": "693840125776",
+    "address": "40 Hillside Rd, Prague, Czechia",
+    "birthDate": "1988-10-16",
+    "photo": "https://randomuser.me/api/portraits/men/20.jpg"
+  }
+]
