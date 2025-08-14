@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const cifDisplay = document.getElementById("cifDisplay");
+const customerData = JSON.parse(localStorage.getItem("selectedCustomer"));
+const customerInfoDiv=document.getElementById("customerInfo");
 
-    const params = new URLSearchParams(window.location.search);
-    const cif = params.get("cif");
-
-    if (cif) {
-        cifDisplay.textContent = `You searched for CIF number: ${cif}`;
-    } else {
-        cifDisplay.textContent = "No CIF number provided.";
+if(customerData){
+    let infoHtml="<ul>";
+    for(const[key,value] of Object.entries(customerData)){
+        infoHtml+=`<li><strong>${key}:</strong> ${value}</li>`;
     }
+    infoHtml+="</ul>";
+    customerInfoDiv.innerHTML=infoHtml;
+}else{
+    customerInfoDiv.innerHTML="<p>No customer information available.</p>";
+}
 });

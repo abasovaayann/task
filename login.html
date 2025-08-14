@@ -9,14 +9,21 @@
 <body>
     <main class="cover">
         <section class="text">
-        <h1 class="body__title">Customers Login</h1>
-        <div class="cif-row">
-           <label for="cifInput" class="parag__title">CIF</label>
-           <input type="text" id="cifInput" placeholder="Enter CIF number">
-        </div>
+            <h1 class="body__title">Customers Login</h1>
+
+            <div class="cif-row">
+                <label for="cifInput" class="parag__title">CIF</label>
+                <input type="text" id="cifInput" placeholder="Enter CIF number">
+            </div>
+
             <button id="searchBtn">Search</button>
             <p class="type" id="errorMessage"></p>
 
+            <!-- Loading icon -->
+            <div class="loading-container" id="loading">
+                <img src="forklift.png" alt="Loading" class="loading-icon">
+                <p>Loading...</p>
+            </div>
         </section>
     </main>
 
