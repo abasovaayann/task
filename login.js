@@ -21,16 +21,23 @@ document.addEventListener("DOMContentLoaded", function() {
         // Validate CIF: not empty, at least 8 digits, numeric
         if (cif === "" || cif.length < 8 || isNaN(cif)) {
            errorMessage.textContent = "Please enter a valid CIF.";
+           setTimeout(() => {
+               errorMessage.textContent = "";
+           }, 1500);
             return;
         }
 
 
-        const customer = customers.find(c => c.cif === cif);
+      const customer = customers.find(c => c.cif === cif);
 
-        if(!customer){
-            errorMessage.textContent = "CIF not found.";
-            return;
-        }
+    if (!customer) {
+    errorMessage.textContent = "CIF not found.";
+    setTimeout(() => {
+        errorMessage.textContent = "";
+    }, 1500);
+    return;
+    }
+
 
         localStorage.setItem("selectedCustomer", JSON.stringify(customer));
 
