@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Add Copy buttons
             function createCopyButton(textToCopy) {
                 const btn = document.createElement("button");
-                btn.textContent = "📋 Copy";
+                btn.textContent = "Copy";
                 btn.className = "copy-btn";
                 btn.onclick = () => {
                     navigator.clipboard.writeText(textToCopy);
