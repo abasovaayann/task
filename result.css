@@ -1,23 +1,28 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    background: #f4f4f4;
 }
 
 .customer-card {
-    width: 300px;
+    width: 350px;
+    margin: 0 auto;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .customer-header {
-    background-color: #f0f0f0;
+    background-color: #e6e6e6;
     padding: 12px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .arrow {
@@ -29,26 +34,53 @@ body {
 }
 
 .customer-info {
-    display: none;
-    padding: 15px;
-    background: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 25px;
     border-top: 1px solid #ccc;
+    background: #fafafa;
 }
 
-.customer-photo img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+.customer-info.open {
+    padding: 25px;
+    max-height: 800px; /* large enough for content */
 }
 
-.customer-details {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.customer-info p {
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.customer-details li {
-    padding: 5px 0;
-    border-bottom: 1px solid #eee;
+.copy-btn {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.copy-btn:hover {
+    background: #0056b3;
+}
+
+
+.customer-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }

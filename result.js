@@ -5,57 +5,58 @@ document.addEventListener("DOMContentLoaded", function () {
     const arrow = document.getElementById("arrow");
 
     if (!customerData) {
-        customerInfoDiv.textContent = "No customer data found.";
+        customerInfoDiv.innerHTML = "<p>No customer data found.</p>";
         return;
     }
 
     toggleDetails.addEventListener("click", function () {
-        if (customerInfoDiv.style.display === "block") {
-            customerInfoDiv.style.display = "none";
-            arrow.classList.remove("up");
-        } else {
-            let infoHtml = "";
+        customerInfoDiv.classList.toggle("open");
+        arrow.classList.toggle("up");
 
-            if (customerData.photo) {
-                infoHtml += `
-                    <div class="customer-photo">
-                        <img src="${customerData.photo}" alt="${customerData.name || 'Customer'}">
-                    </div>
-                `;
-            }
-
-            infoHtml += "<ul class='customer-details'>";
-            for (const [key, value] of Object.entries(customerData)) {
-                if (key !== "photo") {
-                    infoHtml += `<li><strong>${key}:</strong> ${value}</li>`;
-                }
-            }
-            infoHtml += "</ul>";
-
-            customerInfoDiv.innerHTML = infoHtml;
-            customerInfoDiv.style.display = "block";
-            arrow.classList.add("up");
-
-            // Clear old image if exists
+        if (customerInfoDiv.classList.contains("open")) {
+            // Remove old image
             const existingImg = customerInfoDiv.querySelector(".customer-photo");
             if (existingImg) existingImg.remove();
 
-            // Fill <p> elements with values
+            // Fill <p> elements
             const paragraphs = customerInfoDiv.getElementsByTagName("p");
-            paragraphs[0].textContent = `CIF: ${customerData.cif || ""}`;
+            paragraphs[0].innerHTML = `CIF: ${customerData.cif || ""}`;
             paragraphs[1].textContent = `Name: ${customerData.firstName || ""}`;
             paragraphs[2].textContent = `Surname: ${customerData.lastName || ""}`;
-            paragraphs[3].textContent = `Account Number: ${customerData.accountNumber || ""}`;
+            paragraphs[3].innerHTML = `Account Number: ${customerData.accountNumber || ""}`;
             paragraphs[4].textContent = `Address: ${customerData.address || ""}`;
             paragraphs[5].textContent = `Birthday: ${customerData.birthDate || ""}`;
-            paragraphs[6].textContent = `Phone: ${customerData.phone || ""}`;
 
-            // Add photo at the top if available
+            // Highlight birthday if today
+            if (customerData.birthDate) {
+                const today = new Date().toISOString().slice(5, 10);
+                const birthDate = new Date(customerData.birthDate).toISOString().slice(5, 10);
+                if (today === birthDate) {
+                    paragraphs[5].style.background = "#fffae6";
+                    paragraphs[5].textContent += " 🎉 Happy Birthday!";
+                }
+            }
+
+            // Add Copy buttons
+            function createCopyButton(textToCopy) {
+                const btn = document.createElement("button");
+                btn.textContent = "📋 Copy";
+                btn.className = "copy-btn";
+                btn.onclick = () => {
+                    navigator.clipboard.writeText(textToCopy);
+                    alert("Copied to clipboard!");
+                };
+                return btn;
+            }
+            paragraphs[0].appendChild(createCopyButton(customerData.cif));
+            paragraphs[3].appendChild(createCopyButton(customerData.accountNumber));
+
+            // Add photo if available
             if (customerData.photo) {
                 const img = document.createElement("img");
                 img.src = customerData.photo;
-                img.alt = customerData.name || "Customer";
-                img.className = "customer-photo"; // Use your CSS
+                img.alt = customerData.firstName || "Customer";
+                img.className = "customer-photo";
                 customerInfoDiv.insertBefore(img, customerInfoDiv.firstChild);
             }
         }
