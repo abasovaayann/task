@@ -51,14 +51,30 @@ document.addEventListener("DOMContentLoaded", function () {
             paragraphs[0].appendChild(createCopyButton(customerData.cif));
             paragraphs[3].appendChild(createCopyButton(customerData.accountNumber));
 
-            // Add photo if available
-            if (customerData.photo) {
-                const img = document.createElement("img");
-                img.src = customerData.photo;
-                img.alt = customerData.firstName || "Customer";
-                img.className = "customer-photo";
-                customerInfoDiv.insertBefore(img, customerInfoDiv.firstChild);
-            }
+            // add edit button to photo
+          // Add photo with edit button overlay
+if (customerData.photo) {
+    const photoContainer = document.createElement("div");
+    photoContainer.className = "photo-container";
+
+    const img = document.createElement("img");
+    img.src = customerData.photo;
+    img.alt = customerData.firstName || "Customer";
+    img.className = "customer-photo";
+
+    const editBtn = document.createElement("button");
+    editBtn.textContent = "Edit";
+    editBtn.className = "edit-overlay-btn";
+    editBtn.onclick = () => {
+        localStorage.setItem("editCustomer", JSON.stringify(customerData));
+        window.location.href = "edit.html";
+    };
+
+    photoContainer.appendChild(img);
+    photoContainer.appendChild(editBtn);
+    customerInfoDiv.insertBefore(photoContainer, customerInfoDiv.firstChild);
+}
+
         }
     });
 });
