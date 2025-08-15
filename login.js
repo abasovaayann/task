@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Validate CIF: not empty, at least 8 digits, numeric
         if (cif === "" || cif.length < 8 || isNaN(cif)) {
-            errorMessage.textContent = "Please enter a valid CIF.";
+           errorMessage.textContent = "Please enter a valid CIF.";
             return;
         }
 
