@@ -14,11 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
         arrow.classList.toggle("up");
 
         if (customerInfoDiv.classList.contains("open")) {
-            // Remove old image
-            const existingImg = customerInfoDiv.querySelector(".customer-photo");
-            if (existingImg) existingImg.remove();
+            // ---- Remove old stuff before re-adding ----
+            const existingPhoto = customerInfoDiv.querySelector(".photo-container");
+            if (existingPhoto) existingPhoto.remove();
 
-            // Fill <p> elements
+            const existingCopies = customerInfoDiv.querySelectorAll(".copy-btn");
+            existingCopies.forEach(btn => btn.remove());
+
+            // ---- Fill <p> elements ----
             const paragraphs = customerInfoDiv.getElementsByTagName("p");
             paragraphs[0].innerHTML = `CIF: ${customerData.cif || ""}`;
             paragraphs[1].textContent = `Name: ${customerData.firstName || ""}`;
@@ -27,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             paragraphs[4].textContent = `Address: ${customerData.address || ""}`;
             paragraphs[5].textContent = `Birthday: ${customerData.birthDate || ""}`;
 
-            // Highlight birthday if today
+            // ---- Highlight birthday if today ----
             if (customerData.birthDate) {
                 const today = new Date().toISOString().slice(5, 10);
                 const birthDate = new Date(customerData.birthDate).toISOString().slice(5, 10);
@@ -37,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
 
-            // Add Copy buttons
+            // ---- Add Copy buttons (only once) ----
             function createCopyButton(textToCopy) {
                 const btn = document.createElement("button");
                 btn.textContent = "Copy";
@@ -51,30 +54,30 @@ document.addEventListener("DOMContentLoaded", function () {
             paragraphs[0].appendChild(createCopyButton(customerData.cif));
             paragraphs[3].appendChild(createCopyButton(customerData.accountNumber));
 
-            // add edit button to photo
-          // Add photo with edit button overlay
-if (customerData.photo) {
-    const photoContainer = document.createElement("div");
-    photoContainer.className = "photo-container";
+            // ---- Add photo with edit button overlay ----
+            if (customerData.photo) {
+                const photoContainer = document.createElement("div");
+                photoContainer.className = "photo-container";
 
-    const img = document.createElement("img");
-    img.src = customerData.photo;
-    img.alt = customerData.firstName || "Customer";
-    img.className = "customer-photo";
+                const img = document.createElement("img");
+                img.src = customerData.photo;
+                img.alt = customerData.firstName || "Customer";
+                img.className = "customer-photo";
 
-    const editBtn = document.createElement("button");
-    editBtn.textContent = "Edit";
-    editBtn.className = "edit-overlay-btn";
-    editBtn.onclick = () => {
-        localStorage.setItem("editCustomer", JSON.stringify(customerData));
-        window.location.href = "edit.html";
-    };
+                const editBtn = document.createElement("button");
+                editBtn.textContent = "Edit";
+                editBtn.className = "edit-overlay-btn";
+                editBtn.onclick = () => {
+                    localStorage.setItem("editCustomer", JSON.stringify(customerData));
+                    window.location.href = "edit.html";
+                };
 
-    photoContainer.appendChild(img);
-    photoContainer.appendChild(editBtn);
-    customerInfoDiv.insertBefore(photoContainer, customerInfoDiv.firstChild);
-}
+                photoContainer.appendChild(img);
+                photoContainer.appendChild(editBtn);
 
+                // Insert at the top
+                customerInfoDiv.insertBefore(photoContainer, customerInfoDiv.firstChild);
+            }
         }
     });
 });
