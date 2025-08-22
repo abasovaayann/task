@@ -30,15 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
             paragraphs[4].textContent = `Address: ${customerData.address || ""}`;
             paragraphs[5].textContent = `Birthday: ${customerData.birthDate || ""}`;
 
-            // ---- Highlight birthday if today ----
-            if (customerData.birthDate) {
-                const today = new Date().toISOString().slice(5, 10);
-                const birthDate = new Date(customerData.birthDate).toISOString().slice(5, 10);
-                if (today === birthDate) {
-                    paragraphs[5].style.background = "#fffae6";
-                    paragraphs[5].textContent += " 🎉 Happy Birthday!";
-                }
-            }
 
             // ---- Add Copy buttons (only once) ----
             function createCopyButton(textToCopy) {
