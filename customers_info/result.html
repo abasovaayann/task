@@ -1,50 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Details</title>
-    <link rel="stylesheet" href="result.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Details</title>
+  <link rel="stylesheet" href="result.css">
 </head>
 <body>
-    <h1>Customers General Information</h1>
+  <h1>Customers General Information</h1>
 
-    <div class="customer-card">
-        <div class="customer-header" id="toggleDetails">
-            <span>Customer Details</span>
-            <span class="arrow" id="arrow">&#9660;</span>
-        </div>
-
-        <div id="customerInfo" class="customer-info">
-            <p name="cif">CIF: </p>
-            <p name="firstName">Name: </p>
-            <p name="lastName">Surname: </p>
-            <p name="accountNumber">Account Number: </p>
-            <p name="address">Address: </p>
-            <p name="birthDate">Birthday: </p>
-        </div>
-    </div>  
-
-    <div class="bank-cards">
-    <div class="bank-header" id="toggleCards">
-        <span>Bank Cards</span>
-        <span class="arrow" id="arrowCards">&#9660;</span>
+  <div class="customer-card">
+    <div class="customer-header" id="toggleDetails">
+      <span>Customer Details</span>
+      <span class="arrow" id="arrow">&#9660;</span>
     </div>
 
-    <div id="bankContent" class="bank-content">
-        <div id="cardsContainer"></div>
-
-        <div id="cardDetails">
-            <p name="cardNumber">Card Number: </p>
-            <p name="expiryDate">Expiry Date: </p>
-            <p name="cvv">CVV: </p>
-            <p name="cardType">Card Type: </p>
-            <p name="cardBalance">Balance:</p>
-        </div>
+    <div id="customerInfo" class="customer-info">
+      <p name="cif">CIF: </p>
+      <p name="firstName">Name: </p>
+      <p name="lastName">Surname: </p>
+      <p name="accountNumber">Account Number: </p>
+      <p name="address">Address: </p>
+      <p name="birthDate">Birthday: </p>
     </div>
-</div>
+  </div>  
 
+  <!-- Right panel for card details -->
+  <div id="rightPanel" class="right-panel">
+    <button id="closePanel" class="close-btn">&times;</button>
+    <div class="card-details">
+      <h3>Card Details</h3>
+      <p name="cardNumber">Card Number: </p>
+      <p name="expiryDate">Expiry Date: </p>
+      <p name="cvv">CVV: </p>
+      <p name="cardType">Card Type: </p>
+      <p name="cardBalance">Balance:</p>
+    </div>
+  </div>
 
-    <script src="result.js" defer></script>
+  <script src="result.js" defer></script>
 </body>
 </html>

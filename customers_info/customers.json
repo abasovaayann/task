@@ -6,7 +6,17 @@
     "accountNumber": "102938475612",
     "address": "123 Elm St, Baku, Azerbaijan",
     "birthDate": "1992-04-15",
-    "photo": "https://randomuser.me/api/portraits/women/1.jpg"
+    "photo": "https://randomuser.me/api/portraits/women/1.jpg",
+    "bankCards": [
+      {
+        "cardNumber": "1234 5678 9012 3456",
+        "expiryDate": "12/25",
+        "cvv": "123",
+        "cardType": "Visa",
+        "cardBalance": "$5000"
+
+      }
+    ]
   },
   {
     "cif": "57018436",
