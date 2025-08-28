@@ -2,15 +2,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const customerData = JSON.parse(localStorage.getItem("selectedCustomer"));
 
   // DOM elements
-  const toggleDetails = document.getElementById("toggleDetails");
   const customerInfoDiv = document.getElementById("customerInfo");
-  const arrow = document.getElementById("arrow");
   const rightPanel = document.getElementById("rightPanel");
   const closePanelBtn = document.getElementById("closePanel");
+  const toggleTransactionsBtn = document.getElementById("toggleTransactions");
+  const transactionHistoryDiv = document.getElementById("transactionHistory");
 
   // State
   let selectedCardIndex = null;
-  let isCustomerInfoOpen = false;
 
   // If no data
   if (!customerData) {
@@ -42,8 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Fill customer info + photo + mini cards
   function updateCustomerInfo() {
-    if (!isCustomerInfoOpen) return;
-
     clearExistingElements(customerInfoDiv, ".photo-container, .copy-btn, .mini-cards-container");
 
     const paragraphs = customerInfoDiv.getElementsByTagName("p");
@@ -54,6 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
       paragraphs[3].innerHTML = `Account Number: ${customerData.accountNumber || ""}`;
       paragraphs[4].textContent = `Address: ${customerData.address || ""}`;
       paragraphs[5].textContent = `Birthday: ${customerData.birthDate || ""}`;
+      paragraphs[6].textContent = `Email: ${customerData.email || ""}`;
+
+      if (!customerData.email) {
+        paragraphs[6].innerHTML += ` <span class="no-data"><b>No email provided</b></span>`;
+      }
 
       if (customerData.cif) paragraphs[0].appendChild(createCopyButton(customerData.cif));
       if (customerData.accountNumber) paragraphs[3].appendChild(createCopyButton(customerData.accountNumber));
@@ -163,18 +165,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     rightPanel.classList.add("open");
   }
-
-  function toggleCustomerDetails() {
-    isCustomerInfoOpen = !isCustomerInfoOpen;
-    customerInfoDiv.classList.toggle("open", isCustomerInfoOpen);
-    arrow.classList.toggle("up", isCustomerInfoOpen);
-
-    if (isCustomerInfoOpen) {
-      updateCustomerInfo();
-    }
+//Toggle transaction history
+toggleTransactionsBtn.addEventListener("click",()=>{
+  if(transactionHistoryDiv.style.display==="none"){
+    transactionHistoryDiv.style.display="block";
+    toggleTransactionsBtn.textContent="Hide Transactions";
+  }else{
+    transactionHistoryDiv.style.display="none";
+    toggleTransactionsBtn.textContent="Show Transactions";
   }
+})
+
+  // Always load customer info immediately
+  updateCustomerInfo();
 
   // Events
-  toggleDetails.addEventListener("click", toggleCustomerDetails);
   closePanelBtn.addEventListener("click", () => rightPanel.classList.remove("open"));
 });

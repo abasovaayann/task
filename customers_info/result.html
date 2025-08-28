@@ -9,21 +9,18 @@
 <body>
   <h1>Customers General Information</h1>
 
-  <div class="customer-card">
-    <div class="customer-header" id="toggleDetails">
-      <span>Customer Details</span>
-      <span class="arrow" id="arrow">&#9660;</span>
-    </div>
+ <div class="customer-card">
+  <div id="customerInfo" class="customer-info open">
+    <p name="cif">CIF: </p>
+    <p name="firstName">Name: </p>
+    <p name="lastName">Surname: </p>
+    <p name="accountNumber">Account Number: </p>
+    <p name="address">Address: </p>
+    <p name="birthDate">Birthday: </p>
+    <p name="email">Email: </p>
+  </div>
+</div>
 
-    <div id="customerInfo" class="customer-info">
-      <p name="cif">CIF: </p>
-      <p name="firstName">Name: </p>
-      <p name="lastName">Surname: </p>
-      <p name="accountNumber">Account Number: </p>
-      <p name="address">Address: </p>
-      <p name="birthDate">Birthday: </p>
-    </div>
-  </div>  
 
   <!-- Right panel for card details -->
   <div id="rightPanel" class="right-panel">
@@ -35,6 +32,16 @@
       <p name="cvv">CVV: </p>
       <p name="cardType">Card Type: </p>
       <p name="cardBalance">Balance:</p>
+    <!-- I want to add transactions history but it should be appear with toggle button-->
+    <button id="toggleTransactions">Show Transactions</button>
+    <div id="transactionHistory" class="transaction-history" style="display: none;">
+      <h4>Transaction History</h4>
+      <ul>
+        <li>Transaction 1: $100</li>
+        <li>Transaction 2: $200</li>
+        <li>Transaction 3: $300</li>
+      </ul>
+    </div>
     </div>
   </div>
 

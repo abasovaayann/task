@@ -7,6 +7,7 @@
     "address": "123 Elm St, Baku, Azerbaijan",
     "birthDate": "1992-04-15",
     "photo": "https://randomuser.me/api/portraits/women/1.jpg",
+    "email": "alice.walker92@mail.com",
     "bankCards": [
       {
         "cardNumber": "1234 5678 9012 3456",
@@ -14,7 +15,6 @@
         "cvv": "123",
         "cardType": "Visa",
         "cardBalance": "$5000"
-
       }
     ]
   },
@@ -25,7 +25,17 @@
     "accountNumber": "564738291045",
     "address": "45 King Ave, London, United Kingdom",
     "birthDate": "1988-11-02",
-    "photo": "https://randomuser.me/api/portraits/men/2.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/2.jpg",
+    "email": "ben.carter88@hotmail.com",
+    "bankCards": [
+      {
+        "cardNumber": "1378 2831 2839 9239",
+        "expiryDate": "01/29",
+        "cvv": "421",
+        "cardType": "Visa",
+        "cardBalance": "$931"
+      }
+    ]
   },
   {
     "cif": "20957384",
@@ -34,7 +44,16 @@
     "accountNumber": "938475610293",
     "address": "9 Maple Road, Paris, France",
     "birthDate": "1995-06-27",
-    "photo": "https://randomuser.me/api/portraits/women/3.jpg"
+    "photo": "https://randomuser.me/api/portraits/women/3.jpg",
+    "bankCards": [
+      {
+        "cardNumber": "4929 3847 5610 2938",
+        "expiryDate": "07/27",
+        "cvv": "782",
+        "cardType": "MasterCard",
+        "cardBalance": "$3120"
+      }
+    ]
   },
   {
     "cif": "78134602",
@@ -43,7 +62,17 @@
     "accountNumber": "475610293847",
     "address": "77 Oak Blvd, New York, USA",
     "birthDate": "1991-01-19",
-    "photo": "https://randomuser.me/api/portraits/men/4.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/4.jpg",
+    "email": "dan.reed91@gmail.com",
+    "bankCards": [
+      {
+        "cardNumber": "5102 9384 7561 0293",
+        "expiryDate": "03/26",
+        "cvv": "605",
+        "cardType": "Visa",
+        "cardBalance": "$780"
+      }
+    ]
   },
   {
     "cif": "46029871",
@@ -52,7 +81,16 @@
     "accountNumber": "120394857661",
     "address": "12 River St, Toronto, Canada",
     "birthDate": "1993-09-08",
-    "photo": "https://randomuser.me/api/portraits/women/5.jpg"
+    "photo": "https://randomuser.me/api/portraits/women/5.jpg",
+    "bankCards": [
+      {
+        "cardNumber": "6011 2039 4857 6619",
+        "expiryDate": "10/28",
+        "cvv": "449",
+        "cardType": "Discover",
+        "cardBalance": "$1540"
+      }
+    ]
   },
   {
     "cif": "93571028",
@@ -61,7 +99,17 @@
     "accountNumber": "847561029334",
     "address": "4 Harbor Way, Sydney, Australia",
     "birthDate": "1986-12-30",
-    "photo": "https://randomuser.me/api/portraits/men/6.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/6.jpg",
+    "email": "felix.bennett86@yahoo.com",
+    "bankCards": [
+      {
+        "cardNumber": "4539 8475 6102 9334",
+        "expiryDate": "05/26",
+        "cvv": "215",
+        "cardType": "Visa",
+        "cardBalance": "$6800"
+      }
+    ]
   },
   {
     "cif": "68025497",
@@ -70,7 +118,16 @@
     "accountNumber": "334920187456",
     "address": "58 Pine St, Dublin, Ireland",
     "birthDate": "1997-03-11",
-    "photo": "https://randomuser.me/api/portraits/women/7.jpg"
+    "photo": "https://randomuser.me/api/portraits/women/7.jpg",
+    "bankCards": [
+      {
+        "cardNumber": "5243 4920 1874 5612",
+        "expiryDate": "11/30",
+        "cvv": "678",
+        "cardType": "MasterCard",
+        "cardBalance": "$4200"
+      }
+    ]
   },
   {
     "cif": "15790234",
@@ -88,7 +145,17 @@
     "accountNumber": "903845761022",
     "address": "10 Lake View, Madrid, Spain",
     "birthDate": "1994-02-21",
-    "photo": "https://randomuser.me/api/portraits/women/9.jpg"
+    "photo": "https://randomuser.me/api/portraits/women/9.jpg",
+    "email": "isa.lopez94@mail.es",
+    "bankCards": [
+      {
+        "cardNumber": "4539 0384 5761 0227",
+        "expiryDate": "09/27",
+        "cvv": "904",
+        "cardType": "Visa",
+        "cardBalance": "$2100"
+      }
+    ]
   },
   {
     "cif": "39682057",
@@ -106,7 +173,16 @@
     "accountNumber": "219384756403",
     "address": "66 Garden Ln, Rome, Italy",
     "birthDate": "1996-10-03",
-    "photo": "https://randomuser.me/api/portraits/women/11.jpg"
+    "photo": "https://randomuser.me/api/portraits/women/11.jpg",
+    "bankCards": [
+      {
+        "cardNumber": "4532 9384 7564 0371",
+        "expiryDate": "07/29",
+        "cvv": "572",
+        "cardType": "Visa",
+        "cardBalance": "$3620"
+      }
+    ]
   },
   {
     "cif": "50316782",
@@ -115,7 +191,17 @@
     "accountNumber": "675849302114",
     "address": "8 Coral Dr, Miami, USA",
     "birthDate": "1991-09-23",
-    "photo": "https://randomuser.me/api/portraits/men/12.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "liam.anderson91@outlook.com",
+    "bankCards": [
+      {
+        "cardNumber": "6011 6758 4930 2114",
+        "expiryDate": "01/27",
+        "cvv": "308",
+        "cardType": "Discover",
+        "cardBalance": "$980"
+      }
+    ]
   },
   {
     "cif": "21837940",
@@ -124,7 +210,16 @@
     "accountNumber": "302914857663",
     "address": "31 Willow St, Melbourne, Australia",
     "birthDate": "1993-12-12",
-    "photo": "https://randomuser.me/api/portraits/women/13.jpg"
+    "photo": "https://randomuser.me/api/portraits/women/13.jpg",
+    "bankCards": [
+      {
+        "cardNumber": "5203 0291 4857 6637",
+        "expiryDate": "03/28",
+        "cvv": "114",
+        "cardType": "MasterCard",
+        "cardBalance": "$4300"
+      }
+    ]
   },
   {
     "cif": "96720453",
@@ -133,7 +228,17 @@
     "accountNumber": "584739201568",
     "address": "19 Crescent Rd, Edinburgh, UK",
     "birthDate": "1987-06-09",
-    "photo": "https://randomuser.me/api/portraits/men/14.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/14.jpg",
+    "email": "noah.scott87@mail.co.uk",
+    "bankCards": [
+      {
+        "cardNumber": "4539 8473 9201 5683",
+        "expiryDate": "08/26",
+        "cvv": "290",
+        "cardType": "Visa",
+        "cardBalance": "$12750"
+      }
+    ]
   },
   {
     "cif": "64093512",
@@ -142,7 +247,16 @@
     "accountNumber": "940231857604",
     "address": "5 Bay St, Lisbon, Portugal",
     "birthDate": "1998-01-28",
-    "photo": "https://randomuser.me/api/portraits/women/15.jpg"
+    "photo": "https://randomuser.me/api/portraits/women/15.jpg",
+    "bankCards": [
+      {
+        "cardNumber": "6011 4023 1857 6048",
+        "expiryDate": "05/30",
+        "cvv": "845",
+        "cardType": "Discover",
+        "cardBalance": "$2950"
+      }
+    ]
   },
   {
     "cif": "37268019",
@@ -151,7 +265,17 @@
     "accountNumber": "814756203991",
     "address": "120 Bridge Rd, Stockholm, Sweden",
     "birthDate": "1985-08-18",
-    "photo": "https://randomuser.me/api/portraits/men/16.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/16.jpg",
+    "email": "peter.king85@swemail.se",
+    "bankCards": [
+      {
+        "cardNumber": "4539 1475 6203 9912",
+        "expiryDate": "02/27",
+        "cvv": "604",
+        "cardType": "Visa",
+        "cardBalance": "$7100"
+      }
+    ]
   },
   {
     "cif": "45679023",
@@ -160,7 +284,16 @@
     "accountNumber": "510293847562",
     "address": "73 Meadow Ave, Vienna, Austria",
     "birthDate": "1992-11-07",
-    "photo": "https://randomuser.me/api/portraits/women/17.jpg"
+    "photo": "https://randomuser.me/api/portraits/women/17.jpg",
+    "bankCards": [
+      {
+        "cardNumber": "5102 9384 7562 8471",
+        "expiryDate": "06/29",
+        "cvv": "193",
+        "cardType": "MasterCard",
+        "cardBalance": "$3550"
+      }
+    ]
   },
   {
     "cif": "70214598",
@@ -169,7 +302,17 @@
     "accountNumber": "739120564883",
     "address": "6 Forest Way, Budapest, Hungary",
     "birthDate": "1990-08-15",
-    "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/18.jpg",
+    "email": "robert.hill90@mail.hu",
+    "bankCards": [
+      {
+        "cardNumber": "4539 7391 2056 4883",
+        "expiryDate": "11/27",
+        "cvv": "567",
+        "cardType": "Visa",
+        "cardBalance": "$1640"
+      }
+    ]
   },
   {
     "cif": "98560341",
@@ -178,7 +321,16 @@
     "accountNumber": "284756019334",
     "address": "27 Pearl St, Athens, Greece",
     "birthDate": "1994-04-29",
-    "photo": "https://randomuser.me/api/portraits/women/19.jpg"
+    "photo": "https://randomuser.me/api/portraits/women/19.jpg",
+    "bankCards": [
+      {
+        "cardNumber": "5203 8475 6019 3346",
+        "expiryDate": "04/28",
+        "cvv": "832",
+        "cardType": "MasterCard",
+        "cardBalance": "$5090"
+      }
+    ]
   },
   {
     "cif": "61428950",
@@ -187,6 +339,16 @@
     "accountNumber": "693840125776",
     "address": "40 Hillside Rd, Prague, Czechia",
     "birthDate": "1988-10-16",
-    "photo": "https://randomuser.me/api/portraits/men/20.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/20.jpg",
+    "email": "thomas.ward88@gmail.com",
+    "bankCards": [
+      {
+        "cardNumber": "6011 9384 0125 7765",
+        "expiryDate": "09/29",
+        "cvv": "479",
+        "cardType": "Discover",
+        "cardBalance": "$2280"
+      }
+    ]
   }
 ]
